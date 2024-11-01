@@ -14,7 +14,9 @@ class biomeGrid(PygameGrid):
         self.colour_dict = {"White" : (255,255,255),
            "Red" : (255,0,0),
            "Blue" : (0,0,255),
-                            "Green" : (0,255,0),"Cyan" : (255,0,0),"Black" : (0,0,0)}
+                            "Green" : (0,255,0),
+                            "Cyan" : (255,0,0),
+                            "Black" : (0,0,0)}
 
         self.spawn_parent_nodes()
         self.wall_nodes = []
@@ -26,7 +28,7 @@ class biomeGrid(PygameGrid):
         pygame.draw.rect(self.getScreen().screen,colour,rect)
 
     def spawn_parent_nodes(self):
-        colours = ["Green","Red","Blue","Green","Red","Blue","Green","Red","Blue"]
+        colours = ["Green","Red","Blue","Cyan","Black","Blue","Green","Red","Blue"]
         for i in range(3):
             random_x = random.randint(0,self.getGridX()*self.getCellSize())
             random_y = random.randint(0, self.getGridY() * self.getCellSize())

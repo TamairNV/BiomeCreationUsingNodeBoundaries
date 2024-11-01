@@ -19,7 +19,7 @@ def main():
 
     running = True
     screen = grid.getScreen().screen
-    parentNode.expand_all_node(75) 
+    parentNode.expand_all_node(75)
     parentNode.expand_all_node(25)
     parentNode.expand_all_node(75)
     parentNode.normal_node_pos(grid)
